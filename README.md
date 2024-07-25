@@ -6,4 +6,4 @@
 #### - Telegram
 ## Para usar el codigo debes:
 #### - Tener instalado python
-#### - chuparmela
+#### - Tener instalado SQL Server o Algun otro SGDB que prefieras usar
