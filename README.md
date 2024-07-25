@@ -7,3 +7,8 @@
 ## Para usar el codigo debes:
 #### - Tener instalado python
 #### - Tener instalado SQL Server o Algun otro SGDB que prefieras usar
+#### - instalar las librerias de telegram, pyodbc y Levenchtein:
+```bash
+pip install pyodbc
+pip install python-Levenshtein
+pip install python-telegram-bot
