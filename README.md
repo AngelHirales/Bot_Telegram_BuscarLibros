@@ -67,5 +67,28 @@ if __name__ == "__main__":
     main()
 ```
 
-## Una vez que ya tengas todo listo solo crea o descarga mi base de datos y agrega o borra los libros de tu preferencia
+### Para la creacion de ka tabla se uso la siguiente estructura
+```bash
+USE Biblioteca;
+
+IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='Tabla_libros' AND xtype='U')
+CREATE TABLE Tabla_libros (
+    id INT PRIMARY KEY,
+    titulo VARCHAR(255),
+    genero VARCHAR(255),
+    autor VARCHAR(255),
+    editorial VARCHAR(255),
+    año INT,
+    portada VARCHAR(255)
+);
+
+INSERT INTO Tabla_libros (id, titulo, genero, autor, editorial, año, portada) VALUES
+(1, 'El Alquimista', 'Búsqueda, Ficción de aventuras, Realismo mágico, Literatura fantástica', 'Paulo Coelho', 'Editorial del libro', 1988, 'https://proassetspdlcom.cdnstatics2.com/usuaris/libros/fotos/201/original/portada_el-alquimista_paulo-coelho_201612191218.jpg'),
+(2, 'Cien años de soledad', 'Novela, Realismo mágico, Literatura latinoamericana', 'Gabriel García Márquez', 'Editorial Sudamericana', 1967, 'https://www.planetadelibros.com/usuaris/libros/fotos/50/m_libros/portada_cien-anos-de-soledad_gabriel-garcia-marquez_201711291655.jpg'),
+(3, '1984', 'Distopía, Ciencia ficción, Política, Literatura inglesa', 'George Orwell', 'Secker & Warburg', 1949, 'https://images-na.ssl-images-amazon.com/images/I/41E9pyd9QBL._SX324_BO1,204,203,200_.jpg'),
+(4, 'Don Quijote de la Mancha', 'Novela, Aventura, Literatura española, Satira', 'Miguel de Cervantes', 'Francisco de Robles', 1605, 'https://www.planetadelibros.com/usuaris/libros/fotos/71/m_libros/portada_don-quijote-de-la-mancha_miguel-de-cervantes_201605041619.jpg');
+
+```
+
+### Una vez que ya tengas todo listo solo crea o descarga mi base de datos y agrega o borra los libros de tu preferencia
 ## Despues solo pruebalo y diviertete!
