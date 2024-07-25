@@ -10,13 +10,15 @@
 #### - Tener instalado python
 #### - Tener instalado SQL Server o Algun otro SGDB que prefieras usar
 #### - instalar las librerias de:
-### telegram
-```bash
-pip install pyodbc
 ### pyodbc
 ```bash
-### Levenchtein:
+pip install pyodbc
+```
+### Levenshtein
+```bash
 pip install python-Levenshtein
+```
 ### telegram:
 ```bash
 pip install python-telegram-bot
+```
