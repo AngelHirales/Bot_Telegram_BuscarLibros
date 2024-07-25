@@ -22,3 +22,6 @@ pip install python-Levenshtein
 ```bash
 pip install python-telegram-bot
 ```
+
+## Una vez que ya tengas todo listo solo crea o descarga mi base de datos y agrega o borra los libros de tu preferencia
+## Despues solo pruebalo y diviertete!
